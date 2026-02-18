@@ -3,6 +3,7 @@
 # patname
 #
 # Copyright 2014 Dustin Kirkland <dustin.kirkland@gmail.com>
+# Modified 2026 Coleman Collins — forked from petname, replaced animal names with "patrick"
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
