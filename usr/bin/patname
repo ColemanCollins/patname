@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# petname
+# patname
 #
 # Copyright 2014 Dustin Kirkland <dustin.kirkland@gmail.com>
 #
@@ -24,13 +24,14 @@ error() {
 	exit 1
 }
 
-PKG=petname
+PKG=patname
 [ -d "$SNAP/share/$PKG" ] && DIR="$SNAP/share/$PKG" || DIR="/usr/share/$PKG"
 WORDS=2
 SEPARATOR="-"
 LETTERS=99
 COMPLEXITY=
 UBUNTU=
+PATRICK=
 while [ ! -z "$1" ]; do
 	case "${1}" in
 		-w|--words)
@@ -83,6 +84,10 @@ while [ ! -z "$1" ]; do
 			esac
 			shift 2
 		;;
+		-p|--patrick)
+			PATRICK="$2"
+			shift 2
+		;;
 		-u|--ubuntu)
 			UBUNTU=$(cat "$DIR"/*.txt | shuf -n 1 | head -c 1)
 			shift
@@ -131,7 +136,11 @@ Adjective() {
 }
 
 Name() {
-	grep "^$UBUNTU.\{0,$LETTERS\}$" "$DIR/names.txt" | shuf -n 1
+	if [ -n "$PATRICK" ]; then
+		printf "%s" "$PATRICK"
+	else
+		grep "^$UBUNTU.\{0,$LETTERS\}$" "$DIR/names.txt" | shuf -n 1
+	fi
 }
 
 Generate() {

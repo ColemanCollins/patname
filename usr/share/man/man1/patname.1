@@ -1,0 +1,56 @@
+.TH patname 1 "15 December 2014" patname "patname"
+.SH NAME
+\fBpatname\fP \- a utility to generate "pat names", consisting of a random combination of adverbs, an adjective, and "patrick"
+
+.SH SYNOPSIS
+\fBpatname\fP [-w|--words INT] [-l|--letters INT] [-s|--separator STR] [-d|--dir STR] [-c|--complexity INT] [-u|--ubuntu] [-p|--patrick NAME]
+
+.SH OPTIONS
+.nf
+    -w|--words            number of words in the name, default is 2
+    -l|--letters          maximum number of letters in each word, default is unlimited
+    -s|--separator        string used to separate name words, default is '-'
+    -d|--dir              directory containing adverbs.txt, adjectives.txt, names.txt, default is \fI/usr/share/patname/\fP
+    -c|--complexity       [0, 1, 2]; 0 = easy words (small wordlist), 1 = standard words (medium wordlist), 2 = complex words (large wordlist), default=0
+    -u|--ubuntu           generate ubuntu-style names, alliteration of first character of each word
+    -p|--patrick          use a different name instead of "patrick", for when the target of your affection is actually named something else
+.fi
+
+.SH DESCRIPTION
+
+This utility will generate "pat names", consisting of a random combination of an adverb, adjective, and "patrick".  These are useful for unique hostnames or container names, for instance.
+
+.SH EXAMPLES
+.nf
+    $ patname
+    wiggly-patrick
+
+    $ patname --words 1
+    patrick
+
+    $ patname --words 3
+    primly-lasting-patrick
+
+    $ patname --words 4
+    angrily-impatiently-sage-patrick
+
+    $ patname --separator ":"
+    cool:patrick
+
+    $ patname --separator "" --words 3
+    comparablyheartlypatrick
+
+    $ patname --ubuntu
+    amazing-patrick
+
+    $ patname --complexity 0
+    massive-patrick
+
+    $ patname --patrick katrina
+    wiggly-katrina
+.fi
+
+.SH AUTHOR
+This manpage and the utility were written by Dustin Kirkland <dustin.kirkland@gmail.com> for Ubuntu systems (but may be used by others).  Permission is granted to copy, distribute and/or modify this document and the utility under the terms of the Apache2 License.
+
+The complete text of the Apache2 License can be found in \fI/usr/share/common-licenses/Apache-2.0\fP on Debian/Ubuntu systems.

@@ -1,16 +1,16 @@
-name: petname
+name: patname
 version: "2.10"
-summary: "generate pronouncable, perhaps even memorable, pet names"
+summary: "generate pronouncable, perhaps even memorable, pat names"
 description: |
- This utility will generate pet names, consisting of a random
- combination of an adverb, adjective, and an animal name.  These are
+ This utility will generate pat names, consisting of a random
+ combination of an adverb, adjective, and "patrick".  These are
  useful for unique hostnames, VMs, or containers, for instance.
 confinement: strict
 icon: icons/petname.png
 
 apps:
-  petname:
-    command: bin/petname
+  patname:
+    command: bin/patname
 
 parts:
   wrapper:

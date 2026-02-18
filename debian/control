@@ -1,4 +1,4 @@
-Source: petname
+Source: patname
 Section: admin
 Priority: optional
 Maintainer: Dustin Kirkland <kirkland@ubuntu.com>
@@ -7,11 +7,11 @@ Standards-Version: 4.0.0
 Homepage: https://github.com/dustinkirkland/petname
 Vcs-Browser: https://github.com/dustinkirkland/petname
 
-Package: petname
+Package: patname
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: man-db
-Description: RFC1178 implmentation to generate pronouncable, perhaps even memorable, pet names
- This utility will generate "pet names", consisting of a random
- combination of an adverb, adjective, and an animal name.  These are
+Description: RFC1178 implementation to generate pronouncable, perhaps even memorable, "pat names"
+ This utility will generate "pat names", consisting of a random
+ combination of an adverb, adjective, and "patrick".  These are
  useful for unique hostnames, VMs, or containers, for instance.
