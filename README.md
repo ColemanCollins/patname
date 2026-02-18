@@ -2,7 +2,7 @@
 
 ## Name
 
-**patname** − an alternate [RFC1178](https://tools.ietf.org/html/rfc1178) implementation to generate pronounceable, sometimes even memorable, "pat names", consisting of a random combination of adverbs, an adjective, and "patrick," to specifically and affectionately mess with @mocha
+**patname** − an alternate [RFC1178](https://tools.ietf.org/html/rfc1178) implementation to generate pronounceable, sometimes even memorable, "pat names", consisting of a random combination of adverbs, an adjective, and "patrick," to specifically and affectionately mess with the many patricks in his life, and especially [@mocha](https://github.com/mocha).
 
 ## Synopsis
 
