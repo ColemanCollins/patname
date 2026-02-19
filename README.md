@@ -45,13 +45,16 @@ $ patname --separator "" --words 3
 comparablyheartlypatrick
 
 $ patname --ubuntu
-amazing-patrick
+pretty-patrick
 
 $ patname --complexity 0
 massive-patrick
 
 $ patname --patrick katrina
 wiggly-katrina
+
+$ patname --ubuntu --patrick katrina
+kindly-katrina
 ```
 
 ## Author

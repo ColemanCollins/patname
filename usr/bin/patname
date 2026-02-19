@@ -90,7 +90,7 @@ while [ ! -z "$1" ]; do
 			shift 2
 		;;
 		-u|--ubuntu)
-			UBUNTU=$(cat "$DIR"/*.txt | shuf -n 1 | head -c 1)
+			UBUNTU=1
 			shift
 		;;
 		--adverb)
@@ -110,6 +110,15 @@ while [ ! -z "$1" ]; do
 		;;
 	esac
 done
+
+# Resolve ubuntu alliteration letter from the name
+if [ "$UBUNTU" = "1" ]; then
+	if [ -n "$PATRICK" ]; then
+		UBUNTU=$(printf "%s" "$PATRICK" | head -c 1)
+	else
+		UBUNTU="p"
+	fi
+fi
 
 [ "$LETTERS" -lt 3 ] && LETTERS=3
 
