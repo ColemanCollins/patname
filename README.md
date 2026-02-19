@@ -59,4 +59,4 @@ kindly-katrina
 
 ## Author
 
-This project is a fork of [petname](https://github.com/dustinkirkland/petname) by Dustin Kirkland, where every animal name has been replaced with "patrick".
+This project is a joke made by Coleman Collins and his coding assistant Claude, based on [petname](https://github.com/dustinkirkland/petname) by Dustin Kirkland, where every animal name has been replaced with "patrick". Permission is granted to copy, distribute and/or modify this document and the utility under the terms of the Apache2 License.
